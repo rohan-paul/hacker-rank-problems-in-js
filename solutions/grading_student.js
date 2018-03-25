@@ -47,8 +47,6 @@ Sample Output 0
 33
 */
 
-
-
 function solve(grades){
     return grades.map(function(thisGrade) {
     	return ( (thisGrade >= 38) && (thisGrade % 5) >= 3 ) ? ((thisGrade + 5) - (thisGrade % 5)) : thisGrade;
