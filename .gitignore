@@ -28,7 +28,9 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
-.idea
+.idea.
+.vscode
+
 
 # Komodo
 *.komodoproject
