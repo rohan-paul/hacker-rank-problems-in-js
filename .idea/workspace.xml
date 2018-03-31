@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6b29e3-8f28-452c-82d5-417d266f1336" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/10-days-js-solutions/day3/TryCatchFinally.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/HackerRank.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js" afterPath="$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array-second-largest-element.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="array-second-largest-element.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            <state relative-caret-position="273">
+              <caret line="10" column="394" lean-forward="true" selection-start-line="10" selection-start-column="394" selection-end-line="10" selection-end-column="394" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TryCatchFinally.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10-days-js-solutions/day3/TryCatchFinally.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -52,6 +69,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/10-days-js-solutions/day2/loops-VowelsAndConsonants.js" />
         <option value="$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js" />
+        <option value="$PROJECT_DIR$/10-days-js-solutions/day3/TryCatchFinally.js" />
       </list>
     </option>
   </component>
@@ -104,6 +122,12 @@
               <item name="HackerRank" type="b2602c69:ProjectViewProjectNode" />
               <item name="HackerRank" type="462c0819:PsiDirectoryNode" />
               <item name="10-days-js-solutions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HackerRank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackerRank" type="462c0819:PsiDirectoryNode" />
+              <item name="10-days-js-solutions" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HackerRank" type="b2602c69:ProjectViewProjectNode" />
@@ -164,12 +188,12 @@
       <workItem from="1522390357272" duration="1818000" />
       <workItem from="1522392692010" duration="271000" />
       <workItem from="1522392978226" duration="9891000" />
-      <workItem from="1522465902579" duration="2966000" />
+      <workItem from="1522465902579" duration="5632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17745000" />
+    <option name="totallyTimeSpent" value="20411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="650" y="22" width="1262" height="1038" extended-state="0" />
@@ -183,7 +207,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -369,8 +393,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/10-days-js-solutions/day3/array-second-largest-element.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        <state relative-caret-position="273">
+          <caret line="10" column="394" lean-forward="true" selection-start-line="10" selection-start-column="394" selection-end-line="10" selection-end-column="394" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-days-js-solutions/day3/TryCatchFinally.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
