@@ -25,5 +25,4 @@ By adding ^, you tell it that the start of the match must be the start of the st
 
 \1 - backreference to the vowel captured with the first group
 
-
 */
