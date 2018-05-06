@@ -19,7 +19,7 @@ $ - End of string, or end of line in multi-line pattern. Matches the position at
 
 By adding ^, you tell it that the start of the match must be the start of the string and by adding $ you tell it that the end of the match must be the end of the string.
 
-* - Matches the preceding character or subexpression zero or more times.
+* - Matches the preceding character or sub-expression zero or more times.
 
 (a|e|i|o|u) - Group 1 capturing a any one these vowels
 
