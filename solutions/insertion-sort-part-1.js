@@ -65,7 +65,6 @@ insertionSort1 = (n, arr) => {
     console.log(arr.join(' '));
   }
 
-
 }
 
 insertionSort1(5, [2, 4, 6, 8, 3]);
