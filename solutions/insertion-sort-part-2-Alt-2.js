@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/insertionsort2/problem  -  Read my notes in insertion-sort-part-2.js for the steps HR want us to follow to come to insertion sort
+// https://www.hackerrank.com/challenges/insertionsort2/problem  -  Read my notes in insertion-sort-part-2.js for the steps HR want us to follow to come to insertion sort - Accepted by HR
 
 insertionSort2 = (n, arr) => {
 
