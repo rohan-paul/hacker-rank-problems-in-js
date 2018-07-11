@@ -37,7 +37,7 @@ Print arr
 
 */
 
-/* My Note - A> I am effectively re-writing the whole array, by doing an insertion at each iteraion loop of j
+/* My Note - A> I am effectively re-writing ( ** by inserting each elements in its right place ** ) the whole array, by doing an insertion at each iteraion loop of j
 B> With each loop, if the (i+1)-th element is > (i)-th element, then just do a replacement code with < arr[j] = currentRightEnding; >
 
 */
@@ -50,10 +50,12 @@ insertionSort2 = (n, arr) => {
     // Set the current right-end element from which to start the comparisons towards left all the way upto i=0
     let currentRightEnding = parseInt(arr[i + 1]);
 
-    // This next comparison loop will start from i+1 and go leftwards.
+    // This next comparison loop will start from i+1 and go leftwards. With this loop, for each value of outer for loop (i.e. each i ) - I am comparing 2 values and placing them in right place - the (i + 1)-th value and i-th value.
+    // Note, I am using var (not let) because, with let, I will not be able to access 'j' after the for loop when 'j' goes to -1
     for (var j = i + 1; j >= 0; j--) {
+      // console.log("the value of j is " + j);
 
-      // Because, I have to compare with all the left elements starting from j-1 all the way upto 0. So, to start the comparison between each 2 sets of elements, first make the current j element to temporarily take the value of j-1 element before the comparion.
+      // Because, I have to compare with all the left elements starting from j-1 all the way upto 0. So, to start the comparison between each 2 sets of elements, first make the current j-index position to temporarily take the value of j-1-th index-position value. Only then do comparison.
       arr[j] = parseInt(arr[j-1])
 
       if (currentRightEnding >= arr[j]) {
@@ -62,9 +64,14 @@ insertionSort2 = (n, arr) => {
         break;
       }
     }
+    console.log("the value of j is " + j);
 
-    // If during the 
+    // But the above for loop will not take care of the case, when smallest no is at the right most position of the original unsorted array. Because, the loop will only run upto (n - 1) and the max i value will be (n - 1 - 1) + 1. That is the upto index-5 when n=6 . But say for example the smallest no '1' is at the 5-th position - so this will be the value of 'currentRightEnding'. And when I do if (currentRightEnding >= arr[j]) it will fail. And so assignment of 1 to index (j-1) ie. index-0 will never happen. Hence, I have to take care of this with a separate loop. But at this point here, j has reached the value of -1 after the post-decrement from the last for loop iteration. So, its just an eazy single case, to assign arr[0] if and only I have a j=-1
+
+    // And j would hit -1, because, inside the for loop the value of j is being iterated through (i + 1) all the way down to 0 . So the last iteration loop makes j's value to 0
+
     if (j === -1) {
+      // console.log("the value of j is " + j);
       arr[0] = currentRightEnding;
     }
     console.log(arr.join(" "));
