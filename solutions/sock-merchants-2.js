@@ -29,4 +29,23 @@ sockMerchants = (n, ar) => {
 
 }
 
-console.log(sockMerchants(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+// console.log(sockMerchants(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+
+// Exactly same approach, little shorter
+sockMerchants2 = (n, ar) => {
+
+  let pair = {};
+  let resultNoOfSales = 0;
+
+  for (let i of ar) {
+    pair[i] ? pair[i]++ : pair[i] = 1
+    if (!(pair[i] % 2)) resultNoOfSales++
+  }
+
+  console.log(pair);
+
+  return resultNoOfSales
+
+}
+
+console.log(sockMerchants2(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
