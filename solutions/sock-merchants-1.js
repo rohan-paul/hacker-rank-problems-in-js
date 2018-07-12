@@ -7,16 +7,22 @@ Sample Input
 
 9
 10 20 20 10 10 30 50 10 20
+
 Sample Output
 
-3 */
+3
+
+To solve this challenge, we go through each color  and count its frequency, . Once we've calculated all the frequencies, we calculate the number of pairs of each kind of sock as  (using integer division). Finally, we print the total sum of all pairs of socks.
+*/
 
 sockMerchants = (n, ar) => {
 
   // I have to sort it so, each of same color-number comes side by side. Only then the below 2 if-loops inside the while will work. As
   ar.sort()
 
-  let stockHolder = [] // This is a 2-d array, and the inner array is the actual numbered-color
+  let stockHolder = []
+  // This is a 2-d array, and the inner array is the actual numbered-color
+  // The final structure of stockHolder = [ [ 10, 10, 10, 10 ], [ 20, 20, 20 ], [ 30 ], [ 50 ] ]
 
   let i = 0 // index of the given array in the function argument.
 
@@ -42,6 +48,7 @@ sockMerchants = (n, ar) => {
       x++
     }
   }
+  // console.log(stockHolder);
 
   for (let i = 0; i < stockHolder.length; i++) {
     finalSocksPair += Math.floor(stockHolder[i].length / 2)
