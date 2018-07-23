@@ -35,7 +35,7 @@ console.log(pageCount(6, 2));
 
 console.log(pageCount(5, 4));
 
-/* Explanation of the first line < ((n % 2) && p >= (n - 1) ) > - I included this, to shorten number of caluclation.
+/* Explanation of the first line < ((n % 2) && p >= (n - 1) ) > - I included this, to shorten number of calculation.
 
 If total no of pages are odd, then the last 2 pages will be printed on both sides. And so, if she is searching for n-th pages or (n - 1)-th pages, she does not need to flip at all.
 
