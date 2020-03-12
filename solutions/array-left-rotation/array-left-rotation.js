@@ -25,48 +25,59 @@ When we perform  left rotations, the array undergoes the following sequence of c
 Thus, we print the array's final state as a single line of space-separated values, which is 5 1 2 3 4.
 */
 
-// To checkout my solution to this problem, run the command - $ node array-left-rotation.js < data.txt
+// To checkout my solution to this problem, run the command -
 
-process.stdin.resume();
-process.stdin.setEncoding('ascii');
+// $ node array-left-rotation.js < data.txt
 
-var input_stdin = "";
-var input_stdin_array = "";
-var input_currentline = 0;  // This variabale will just hold the numeric value of the current line, starting from zero index
+process.stdin.resume()
+process.stdin.setEncoding("ascii")
 
-process.stdin.on('data', function (data) {
-    input_stdin += data;
-    // console.log(input_stdin);
-});
+var input_stdin = ""
+var input_stdin_array = ""
+var input_currentline = 0 // This variable will just hold the numeric value of the current line, starting from zero index
 
-// The callback functiion to process.stdin.on will take the input stream of data and split it by new lines, making a new array like so,
+// The below stdin.on will only read the data.txt file from the argument passed to my command,
+process.stdin.on("data", function(data) {
+  input_stdin += data
+  // console.log(input_stdin)
+  /* If I uncomment this above console.log() then I will see in terminal extra 2 lines as below
+
+  5 4
+  1 2 3 4 5
+  */
+})
+
+// The callback function to process.stdin.on will take the input stream of data and split it by new lines, making a new array like so,
 // [ '5 4', '1 2 3 4 5', '' ]
-process.stdin.on('end', function () {
-    input_stdin_array = input_stdin.split("\n");
-    // console.log(input_stdin_array);
-    main();
-});
+process.stdin.on("end", function() {
+  input_stdin_array = input_stdin.split("\n")
+  // console.log(input_stdin_array)
+  main()
+})
 
-// The readLine() function will only return successive elements of the input_stdin_arrray so that those successive lines can be read in the main() function below.
+// The readLine() function will only return successive elements of the input_stdin_array so that those successive lines can be read in the main() function below.
 function readLine() {
-    return input_stdin_array[input_currentline++];
+  console.log(input_stdin_array[input_currentline++])
+  return input_stdin_array[input_currentline++]
 }
 
 /////////////// ignore above this line ////////////////////
 
 function main() {
+  var n_temp = readLine().split(" ")
+  var n = parseInt(n_temp[0])
+  var k = parseInt(n_temp[1])
+  a = readLine().split(" ")
+  a = a.map(Number)
 
-    var n_temp = readLine().split(' ');
-    var n = parseInt(n_temp[0]);
-    var k = parseInt(n_temp[1]);
-    a = readLine().split(' ');
-    a = a.map(Number);
-
-    for(let i = 0; i < k; i++) {
-        let temp = a[0];
-        a.shift();
-        a.push(temp);
-      }
-    console.log(a.join(" "));
-
+  for (let i = 0; i < k; i++) {
+    let temp = a[0]
+    a.shift()
+    a.push(temp)
+  }
+  console.log(a.join(" "))
 }
+
+/* Run the solution file with following command
+node array-left-rotation.js < data.txt
+ */
